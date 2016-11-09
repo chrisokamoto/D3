@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="javascript/visualizacao.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+<link href="css/datepicker.css" rel="stylesheet" type="text/css"/>
+
+<br/><br/>
+<body>
+  <div id="wrapper wrapper-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="col-xs-2">
+            <p>Filtro por loja:
+              <select id="lojas" class="form-control"></select>
+            </p>
+          </div>
+          <div class="col-xs-3">
+            Data: <input type="text" id="inicio" class="form-control" placeholder="05/02/2010 - 26/10/2012">
+          </div>
+          <div class="col-xs-2">
+            <p>Filtrar por departamento: <input type="text" id="dept" class="form-control"> </p>
+          </div>
+          <div class="col-xs-2">
+            <button type="button" onclick="updateData()" class="btn btn-lg btn-info filtrar_button">Filtrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<svg width="960" height="880"></svg>
